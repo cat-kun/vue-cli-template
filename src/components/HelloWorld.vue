@@ -90,6 +90,10 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  created() {
+    console.log('环境', process.env.ENV_CONFIG)
+    console.log('api', process.env.BASE_API)
   }
 }
 </script>

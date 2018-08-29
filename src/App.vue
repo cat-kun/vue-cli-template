@@ -7,11 +7,7 @@
 
 <script>
 export default {
-  name: 'App',
-  created() {
-    console.log('环境', process.env.ENV_CONFIG)
-    console.log('api', process.env.BASE_API)
-  }
+  name: 'App'
 }
 </script>
 

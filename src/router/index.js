@@ -9,6 +9,11 @@ export default new Router({
       path: '/',
       name: 'HelloWorld',
       component: () => import('@/components/HelloWorld')
+    },
+    {
+      path: '/test',
+      name: 'Test',
+      component: () => import('@/components/test')
     }
   ]
 })
