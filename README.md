@@ -24,6 +24,39 @@ npm run build:test
 npm run build
 ```
 
+#### 目录
+
+``` bash
+├── build
+│   ├── build.js
+│   ├── check-versions.js
+│   ├── logo.png
+│   ├── utils.js
+│   ├── vue-loader.conf.js
+│   ├── webpack.base.conf.js
+│   ├── webpack.dev.conf.js
+│   └── webpack.prod.conf.js
+├── config
+│   ├── dev.env.js        # 开发环境配置
+│   ├── index.js
+│   ├── prod.env.js       # 生成环境配置
+│   └── test.env.js       # 测试环境配置
+|
+├── src                   # 开发目录
+│   ├── api               # 接口
+│   ├── assets            # 静态资源
+│   ├── components        # 组件
+│   ├── router            # 路由
+│   ├── utils             # 工具
+│   ├── App.vue           # 根组件
+│   └── main.js           # 入口文件
+├── static
+├── LICENSE
+├── favicon.ico
+├── index.html
+└── package.json
+```
+
 ## 其他
 ``` bash
 # build for production with minification
