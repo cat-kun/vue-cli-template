@@ -2,7 +2,7 @@ import fetch from '@/utils/request'
 
 export function test(params) {
   return fetch({
-    url: '/example/1535529586979',
+    url: '/getdata1',
     method: 'get',
     params
   })
@@ -10,7 +10,7 @@ export function test(params) {
 
 export function test2(query) {
   return fetch({
-    url: '/example/1535529625132',
+    url: '/getdata2',
     method: 'get',
     params: query
   })

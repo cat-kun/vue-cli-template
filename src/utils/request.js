@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { getToken } from './auth'
+import { Message, MessageBox } from 'element-ui'
 
 // 创建 axios 实例
 const service = axios.create({
@@ -31,8 +32,9 @@ service.interceptors.response.use(response => {
    */
   const res = response.data
   if( res.code != 0 ){
+    console.log('接口返回', res.msg);
     // 请自行引入 message
-    // this.$message.error(res.msg)
+    Message.error(res.msg)
     // if (res.code === 50008 || res.code === 50012 || res.code === 50014) {
     //   // 请自行引入 MessageBox
     //   // import { Message, MessageBox } from 'element-ui'
@@ -46,10 +48,11 @@ service.interceptors.response.use(response => {
     //     })
     //   })
     // }
-    return Promise.reject('error')
+    return response.data
+    // return Promise.reject('error')
   }else{
     return response.data
-  }  
+  }
 }, error => {
   // 对响应错误做点什么
   console.log(error)
