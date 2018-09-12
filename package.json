@@ -1,8 +1,8 @@
 {
   "name": "vue-cli-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Vue.js project",
-  "author": "xiaozhen <626269256@qq.com>",
+  "author": "",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
